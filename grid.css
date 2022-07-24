@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  place-items: center;
+}
+header {
+  /* width: 100%;
+    background-color: rgb(17, 29, 48);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+     */
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  background-color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+header ul li {
+  /* text-transform: uppercase;
+    color: white;
+    list-style-type: none; */
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'a a a a b b'
+    'a a a a b b'
+    'c c d d d d'
+    'c c e e e e';
+  gap: 5px;
+  width: 50%;
+  margin: 0 auto;
+  gap: 15px;
+
+  margin-top: 100px;
+}
+main div {
+  padding: 50px;
+  text-align: center;
+  border-radius: 0%;
+}
+
+.item-a {
+  background-color: orangered;
+  grid-area: a;
+}
+.item-b {
+  background-color: yellow;
+  grid-area: b;
+}
+.item-c {
+  background-color: green;
+  grid-area: c;
+}
+.item-d {
+  background-color: rgb(14, 151, 193);
+  grid-area: d;
+}
+.item-e {
+  background-color: rgb(14, 151, 193);
+  grid-area: e;
+}
